@@ -7,6 +7,6 @@ const svg = d3.select("#chart-area").append("svg")
 data.forEach((height, i) => svg.append("rect")
   .attr("height", height)
   .attr("width", 40)
-  .attr("y", 10)
+  .attr("y", 400 - height)
   .attr("x", i * 45 + 5)
 );
