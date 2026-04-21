@@ -1,0 +1,111 @@
+#chart-area svg {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#logo {
+	height: 50px;
+}
+
+.navbar-brand {
+	height: 60px;
+	padding: 5px 0px;
+}
+
+.chart-controls {
+	margin-bottom: 16px;
+}
+
+.chart-controls__toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 16px 24px;
+}
+
+.chart-controls__continent {
+	margin-bottom: 0;
+	min-width: 180px;
+}
+
+.chart-controls__continent .control-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	color: #333;
+}
+
+.chart-controls__slider {
+	margin-bottom: 0;
+	flex: 1 1 280px;
+	min-width: 220px;
+}
+
+.chart-controls__slider label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 6px;
+}
+
+.chart-controls__slider input[type="range"] {
+	width: 100%;
+	max-width: 520px;
+}
+
+.year-label {
+	font-size: 52px;
+	font-weight: 700;
+	fill: rgba(0, 0, 0, 0.12);
+	pointer-events: none;
+}
+
+.axis-label {
+	font-size: 13px;
+	font-weight: 500;
+	fill: #333;
+}
+
+.axis path,
+.axis line {
+	stroke: #666;
+}
+
+.axis text {
+	font-size: 11px;
+	fill: #333;
+}
+
+.legend-title {
+	font-size: 12px;
+	font-weight: 600;
+	fill: #222;
+}
+
+.legend-text {
+	font-size: 11px;
+	fill: #333;
+}
+
+.chart-tooltip {
+	position: fixed;
+	z-index: 2000;
+	max-width: 280px;
+	padding: 10px 12px;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #222;
+	background: rgba(255, 255, 255, 0.96);
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+	pointer-events: none;
+}
+
+.chart-tooltip strong {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 13px;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Exercise 8 — Gapminder</title>
+    <link rel="stylesheet" href="../deps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt="Logo"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row chart-controls">
+            <div class="col-sm-12">
+                <div class="btn-toolbar chart-controls__toolbar" role="toolbar">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="btn-play-pause" class="btn btn-primary">Pause</button>
+                        <button type="button" id="btn-reset" class="btn btn-default">Reset</button>
+                    </div>
+                    <div class="form-group chart-controls__continent">
+                        <label for="continent-filter" class="control-label">Continent</label>
+                        <select id="continent-filter" class="form-control"></select>
+                    </div>
+                    <div class="form-group chart-controls__slider">
+                        <label for="year-slider">Year: <span id="year-slider-label"></span></label>
+                        <input type="range" id="year-slider" class="form-control" min="0" max="0" value="0" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="chart-area"></div>
+        </div>
+    </div>
+
+    <div id="chart-tooltip" class="chart-tooltip" style="display: none;"></div>
+
+    <script src="../deps/js/jquery.min.js"></script>
+    <script src="../deps/js/bootstrap.min.js"></script>
+    <script src="../deps/js/d3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
